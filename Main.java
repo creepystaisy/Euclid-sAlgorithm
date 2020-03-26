@@ -3,12 +3,12 @@ import java.util.Scanner;
 public class Main {
     public static int Euclid(int a, int b)
     {
-        while (a != b)
+        while (a != 0 && b !=0)
         {
             if(a > b)
-                a = a - b;
+                a = a % b;
             else
-                b = b - a;
+                b = b % a;
         }
         return a;
     }
